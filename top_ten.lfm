@@ -1,0 +1,91 @@
+object FormTopTen: TFormTopTen
+  Left = 313
+  Height = 288
+  Top = 126
+  Width = 373
+  BorderStyle = bsDialog
+  Caption = 'Top Ten'
+  ClientHeight = 288
+  ClientWidth = 373
+  OnShow = FormShow
+  LCLVersion = '1.6.0.4'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 248
+    Top = 0
+    Width = 373
+    Align = alClient
+    ColCount = 3
+    RowCount = 11
+    TabOrder = 0
+    ColWidths = (
+      64
+      198
+      106
+    )
+    Cells = (
+      13
+      0
+      0
+      'Place'
+      0
+      1
+      '1'
+      0
+      2
+      '2'
+      0
+      3
+      '3'
+      0
+      4
+      '4'
+      0
+      5
+      '5'
+      0
+      6
+      '6'
+      0
+      7
+      '7'
+      0
+      8
+      '8'
+      0
+      9
+      '9'
+      0
+      10
+      '10'
+      1
+      0
+      'Name'
+      2
+      0
+      'Score'
+    )
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 40
+    Top = 248
+    Width = 373
+    Align = alBottom
+    ClientHeight = 40
+    ClientWidth = 373
+    TabOrder = 1
+    object BitBtnOk: TBitBtn
+      Left = 152
+      Height = 30
+      Top = 6
+      Width = 75
+      Caption = '&OK'
+      Default = True
+      Kind = bkOK
+      ModalResult = 1
+      OnClick = BitBtnOkClick
+      TabOrder = 0
+    end
+  end
+end
